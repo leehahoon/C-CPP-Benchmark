@@ -8,22 +8,21 @@
 | [SEC-bench-Pro](https://github.com/SEC-bench/SEC-bench-Pro) | 344개 사례의 메타데이터·패치·대상 파일 라벨, 전체 프로젝트 스냅샷 2개 | V8·Linux 실제 프로젝트 사례 |
 | [CASTLE C250](https://github.com/CASTLE-Benchmark/CASTLE-Benchmark) | C 파일 250개, 취약 150개·비취약 100개, 원본 줄 라벨 | 줄 탐지와 비취약 파일의 경보 확인 |
 
-## GitHub에서 받은 뒤 데이터 준비
+## GitHub에서 받은 뒤 한 번에 재현
 
-Git 커밋에는 스크립트, 라벨, 평가 결과를 포함합니다. 수 GB인 원본 다운로드 파일(`data/raw/`), 원본 저장소(`sources/`), 분석 대상 소스(`workloads/`)와 생성된 빌드 파일은 제외합니다. 새로 복제한 폴더에서는 다음 명령으로 [고정 버전과 해시](data/PROVENANCE.md)의 원본을 다운로드하고 실행용 파일을 재생성하세요. Google Drive의 ReposVul JSONL을 받는 데 `gdown`이 필요합니다.
+Git 커밋에는 스크립트, 라벨, 평가 결과를 포함합니다. 수 GB인 원본 다운로드 파일(`data/raw/`), 원본 저장소(`sources/`), 분석 대상 소스(`workloads/`)와 생성된 빌드 파일은 제외합니다. Docker가 실행 중인 새 복제본에서 아래 한 명령을 실행하면 **이미지 빌드 → 컨테이너에서 원본 다운로드·SHA-256 확인·압축 해제·라벨 생성 → Cppcheck·Clang 평가·점수 계산**까지 수행합니다. 다운로드에 필요한 `gdown`도 이미지 안에 설치됩니다.
 
 ```bash
-python3 -m venv .venv
-.venv/bin/python -m pip install gdown
-PATH="$PWD/.venv/bin:$PATH" bash scripts/fetch_data.sh
-bash docker/run.sh build
+bash docker_build.sh
 ```
 
-이미 내려받은 파일은 SHA-256을 확인하고 재사용합니다. 다운로드와 압축 해제에는 수 GB의 여유 공간이 필요합니다. `results/`의 점수·SARIF·판정 기록은 커밋에 포함돼 있으므로 데이터를 받기 전에도 기존 평가 근거를 확인할 수 있습니다.
+다운로드와 압축 해제에는 수 GB의 여유 공간이 필요합니다. 원본은 [고정 버전과 해시](data/PROVENANCE.md)를 사용하며, 이미 받은 파일은 확인 후 재사용합니다. 다운로드 단계에만 컨테이너 네트워크를 사용하고 분석 단계는 네트워크를 끕니다. 생성된 데이터는 호스트의 `data/raw/`, `sources/`, `workloads/`에 저장돼 컨테이너 종료 후에도 남습니다. 평가 결과는 `results/`에 저장됩니다.
+
+`bash docker_build.sh prepare`는 이미지와 데이터·라벨만 준비하고, `bash docker_build.sh smoke`는 CASTLE 두 분석기의 실행과 점수 계산까지 확인합니다. 기본 실행은 CASTLE, ReposVul 취약 파일 729건, 준비된 ReposVul 프로젝트 2건, SEC 대상 파일 2건과 V8·Linux 전체 소스를 분석합니다. V8 전체 소스에는 시간 제한을 두지 않고 Linux 전체 소스는 기본 1,200초 제한으로 실행합니다. Linux 제한은 `BENCH_LINUX_TIMEOUT=3600 bash docker_build.sh`처럼 바꿀 수 있습니다. 이전 실행의 점수·SARIF·시간 기록도 Git 커밋에 포함돼 있습니다.
 
 ## 바로 실행
 
-이 Mac에는 Colima Docker 환경과 `ccpp-benchmark:local` 이미지가 준비돼 있습니다. Docker를 다시 시작해야 할 때는 `colima start`를 실행합니다. 이미지를 다시 만들려면 `bash docker/run.sh build`를 실행합니다.
+이 Mac에는 Colima Docker 환경과 `ccpp-benchmark:local` 이미지가 준비돼 있습니다. Docker를 다시 시작해야 할 때는 `colima start`를 실행합니다. 이미지만 다시 만들려면 `bash docker/run.sh build`를 실행합니다.
 
 평가 컨테이너는 현재 폴더를 마운트하고 네트워크를 끈 상태에서 실행됩니다.
 

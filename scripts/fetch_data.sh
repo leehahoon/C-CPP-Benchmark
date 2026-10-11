@@ -5,7 +5,11 @@ cd "$(dirname "$0")/.."
 
 check_sha256() {
   local path="$1" expected="$2" actual
-  actual="$(shasum -a 256 "$path" | awk '{print $1}')"
+  if command -v sha256sum >/dev/null 2>&1; then
+    actual="$(sha256sum "$path" | awk '{print $1}')"
+  else
+    actual="$(shasum -a 256 "$path" | awk '{print $1}')"
+  fi
   if [[ "$actual" != "$expected" ]]; then
     echo "SHA-256 불일치: $path ($actual)" >&2
     return 1
@@ -39,7 +43,7 @@ download_drive() {
     return
   fi
   if ! command -v gdown >/dev/null 2>&1; then
-    echo "ReposVul 다운로드에 gdown이 필요합니다. README의 가상환경 설치 명령을 실행하세요." >&2
+    echo "ReposVul 다운로드에 gdown이 필요합니다. Docker 이미지를 먼저 빌드하세요." >&2
     exit 1
   fi
   tmp="${path}.part"
@@ -55,8 +59,7 @@ extract_archive() {
     echo "압축 해제 건너뜀: $target"
     return
   fi
-  mkdir -p "$target"
-  tar -xzf "$archive" --strip-components=1 -C "$target"
+  python3 scripts/extract_archive.py "$archive" "$target"
 }
 
 fetch_source() {
