@@ -1,0 +1,221 @@
+{
+  "$schema": "https://docs.oasis-open.org/sarif/sarif/v2.1.0/cos02/schemas/sarif-schema-2.1.0.json",
+  "runs": [
+    {
+      "artifacts": [
+        {
+          "length": 451,
+          "location": {
+            "index": 0,
+            "uri": "file:///workspace/workloads/castle/source/CASTLE-416-5.c"
+          },
+          "mimeType": "text/plain",
+          "roles": [
+            "resultFile"
+          ]
+        }
+      ],
+      "columnKind": "unicodeCodePoints",
+      "results": [
+        {
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "importance": "essential",
+                      "location": {
+                        "message": {
+                          "text": "Memory is allocated"
+                        },
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "index": 0,
+                            "uri": "file:///workspace/workloads/castle/source/CASTLE-416-5.c"
+                          },
+                          "region": {
+                            "endColumn": 40,
+                            "endLine": 11,
+                            "startColumn": 21,
+                            "startLine": 11
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "importance": "important",
+                      "location": {
+                        "message": {
+                          "text": "Assuming 'a' is not equal to NULL"
+                        },
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "index": 0,
+                            "uri": "file:///workspace/workloads/castle/source/CASTLE-416-5.c"
+                          },
+                          "region": {
+                            "endColumn": 18,
+                            "endLine": 13,
+                            "startColumn": 9,
+                            "startLine": 13
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "importance": "unimportant",
+                      "location": {
+                        "message": {
+                          "text": "Taking false branch"
+                        },
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "index": 0,
+                            "uri": "file:///workspace/workloads/castle/source/CASTLE-416-5.c"
+                          },
+                          "region": {
+                            "endColumn": 5,
+                            "startColumn": 5,
+                            "startLine": 13
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "importance": "essential",
+                      "location": {
+                        "message": {
+                          "text": "Calling 'doCalcWithoutFree'"
+                        },
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "index": 0,
+                            "uri": "file:///workspace/workloads/castle/source/CASTLE-416-5.c"
+                          },
+                          "region": {
+                            "endColumn": 25,
+                            "endLine": 22,
+                            "startColumn": 5,
+                            "startLine": 22
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "importance": "essential",
+                      "location": {
+                        "message": {
+                          "text": "Memory is released"
+                        },
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "index": 0,
+                            "uri": "file:///workspace/workloads/castle/source/CASTLE-416-5.c"
+                          },
+                          "region": {
+                            "endColumn": 12,
+                            "endLine": 7,
+                            "startColumn": 5,
+                            "startLine": 7
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "importance": "essential",
+                      "location": {
+                        "message": {
+                          "text": "Returning; memory was released via 1st parameter"
+                        },
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "index": 0,
+                            "uri": "file:///workspace/workloads/castle/source/CASTLE-416-5.c"
+                          },
+                          "region": {
+                            "endColumn": 25,
+                            "endLine": 22,
+                            "startColumn": 5,
+                            "startLine": 22
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "importance": "essential",
+                      "location": {
+                        "message": {
+                          "text": "Use of memory after it is freed"
+                        },
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "index": 0,
+                            "uri": "file:///workspace/workloads/castle/source/CASTLE-416-5.c"
+                          },
+                          "region": {
+                            "endColumn": 25,
+                            "endLine": 23,
+                            "startColumn": 5,
+                            "startLine": 23
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": 0,
+                  "uri": "file:///workspace/workloads/castle/source/CASTLE-416-5.c"
+                },
+                "region": {
+                  "endColumn": 25,
+                  "endLine": 23,
+                  "startColumn": 5,
+                  "startLine": 23
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Use of memory after it is freed"
+          },
+          "ruleId": "unix.Malloc",
+          "ruleIndex": 0
+        }
+      ],
+      "tool": {
+        "driver": {
+          "fullName": "clang static analyzer",
+          "informationUri": "https://clang.llvm.org/docs/UsersManual.html",
+          "language": "en-US",
+          "name": "clang",
+          "rules": [
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "warning",
+                "rank": -1
+              },
+              "fullDescription": {
+                "text": "Check for memory leaks, double free, and use-after-free problems. Traces memory managed by malloc()/free()."
+              },
+              "helpUri": "https://clang.llvm.org/docs/analyzer/checkers.html#unix-malloc",
+              "id": "unix.Malloc",
+              "name": "unix.Malloc"
+            }
+          ],
+          "version": "Ubuntu clang version 18.1.3 (1ubuntu1)"
+        }
+      }
+    }
+  ],
+  "version": "2.1.0"
+}

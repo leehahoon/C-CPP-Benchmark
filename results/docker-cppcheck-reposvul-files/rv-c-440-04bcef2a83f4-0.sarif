@@ -1,0 +1,44 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Cppcheck",
+          "rules": [
+            {
+              "id": "wrongPrintfScanfArgNum",
+              "name": "wrongPrintfScanfArgNum"
+            },
+            {
+              "id": "toomanyconfigs",
+              "name": "toomanyconfigs"
+            }
+          ]
+        }
+      },
+      "results": [
+        {
+          "ruleId": "wrongPrintfScanfArgNum",
+          "level": "error",
+          "message": {
+            "text": "sprintf format string requires 4 parameters but only 2 are given."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "net/netfilter/ipvs/ip_vs_ctl.c"
+                },
+                "region": {
+                  "startLine": 2376
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

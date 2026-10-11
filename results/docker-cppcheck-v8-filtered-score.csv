@@ -1,0 +1,2 @@
+id,dataset,source_scope,ground_truth,alerts,target_file_alerts,file_hit,candidate_line_hit,has_line_candidates
+sec-v8-472139305,sec-bench-pro,full_project_snapshot,positive,328,0,False,False,False

@@ -1,0 +1,534 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Cppcheck",
+          "rules": [
+            {
+              "id": "invalidscanf",
+              "name": "invalidscanf"
+            }
+          ]
+        }
+      },
+      "results": [
+        {
+          "ruleId": "invalidscanf",
+          "level": "warning",
+          "message": {
+            "text": "scanf() without field width limits can crash with huge input data."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "tools/cpdb-text-frontend.c"
+                },
+                "region": {
+                  "startLine": 162
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "invalidscanf",
+          "level": "warning",
+          "message": {
+            "text": "scanf() without field width limits can crash with huge input data."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "tools/cpdb-text-frontend.c"
+                },
+                "region": {
+                  "startLine": 198
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "invalidscanf",
+          "level": "warning",
+          "message": {
+            "text": "scanf() without field width limits can crash with huge input data."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "tools/cpdb-text-frontend.c"
+                },
+                "region": {
+                  "startLine": 221
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "invalidscanf",
+          "level": "warning",
+          "message": {
+            "text": "scanf() without field width limits can crash with huge input data."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "tools/cpdb-text-frontend.c"
+                },
+                "region": {
+                  "startLine": 243
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "invalidscanf",
+          "level": "warning",
+          "message": {
+            "text": "scanf() without field width limits can crash with huge input data."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "tools/cpdb-text-frontend.c"
+                },
+                "region": {
+                  "startLine": 254
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "invalidscanf",
+          "level": "warning",
+          "message": {
+            "text": "scanf() without field width limits can crash with huge input data."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "tools/cpdb-text-frontend.c"
+                },
+                "region": {
+                  "startLine": 265
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "invalidscanf",
+          "level": "warning",
+          "message": {
+            "text": "scanf() without field width limits can crash with huge input data."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "tools/cpdb-text-frontend.c"
+                },
+                "region": {
+                  "startLine": 276
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "invalidscanf",
+          "level": "warning",
+          "message": {
+            "text": "scanf() without field width limits can crash with huge input data."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "tools/cpdb-text-frontend.c"
+                },
+                "region": {
+                  "startLine": 284
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "invalidscanf",
+          "level": "warning",
+          "message": {
+            "text": "scanf() without field width limits can crash with huge input data."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "tools/cpdb-text-frontend.c"
+                },
+                "region": {
+                  "startLine": 292
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "invalidscanf",
+          "level": "warning",
+          "message": {
+            "text": "scanf() without field width limits can crash with huge input data."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "tools/cpdb-text-frontend.c"
+                },
+                "region": {
+                  "startLine": 300
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "invalidscanf",
+          "level": "warning",
+          "message": {
+            "text": "scanf() without field width limits can crash with huge input data."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "tools/cpdb-text-frontend.c"
+                },
+                "region": {
+                  "startLine": 311
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "invalidscanf",
+          "level": "warning",
+          "message": {
+            "text": "scanf() without field width limits can crash with huge input data."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "tools/cpdb-text-frontend.c"
+                },
+                "region": {
+                  "startLine": 326
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "invalidscanf",
+          "level": "warning",
+          "message": {
+            "text": "scanf() without field width limits can crash with huge input data."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "tools/cpdb-text-frontend.c"
+                },
+                "region": {
+                  "startLine": 338
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "invalidscanf",
+          "level": "warning",
+          "message": {
+            "text": "scanf() without field width limits can crash with huge input data."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "tools/cpdb-text-frontend.c"
+                },
+                "region": {
+                  "startLine": 352
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "invalidscanf",
+          "level": "warning",
+          "message": {
+            "text": "scanf() without field width limits can crash with huge input data."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "tools/cpdb-text-frontend.c"
+                },
+                "region": {
+                  "startLine": 365
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "invalidscanf",
+          "level": "warning",
+          "message": {
+            "text": "scanf() without field width limits can crash with huge input data."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "tools/cpdb-text-frontend.c"
+                },
+                "region": {
+                  "startLine": 375
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "invalidscanf",
+          "level": "warning",
+          "message": {
+            "text": "scanf() without field width limits can crash with huge input data."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "tools/cpdb-text-frontend.c"
+                },
+                "region": {
+                  "startLine": 387
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "invalidscanf",
+          "level": "warning",
+          "message": {
+            "text": "scanf() without field width limits can crash with huge input data."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "tools/cpdb-text-frontend.c"
+                },
+                "region": {
+                  "startLine": 409
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "invalidscanf",
+          "level": "warning",
+          "message": {
+            "text": "scanf() without field width limits can crash with huge input data."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "tools/cpdb-text-frontend.c"
+                },
+                "region": {
+                  "startLine": 421
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "invalidscanf",
+          "level": "warning",
+          "message": {
+            "text": "scanf() without field width limits can crash with huge input data."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "tools/cpdb-text-frontend.c"
+                },
+                "region": {
+                  "startLine": 430
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "invalidscanf",
+          "level": "warning",
+          "message": {
+            "text": "scanf() without field width limits can crash with huge input data."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "tools/cpdb-text-frontend.c"
+                },
+                "region": {
+                  "startLine": 440
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "invalidscanf",
+          "level": "warning",
+          "message": {
+            "text": "scanf() without field width limits can crash with huge input data."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "tools/cpdb-text-frontend.c"
+                },
+                "region": {
+                  "startLine": 449
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "invalidscanf",
+          "level": "warning",
+          "message": {
+            "text": "scanf() without field width limits can crash with huge input data."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "tools/cpdb-text-frontend.c"
+                },
+                "region": {
+                  "startLine": 457
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "invalidscanf",
+          "level": "warning",
+          "message": {
+            "text": "scanf() without field width limits can crash with huge input data."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "tools/cpdb-text-frontend.c"
+                },
+                "region": {
+                  "startLine": 468
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "invalidscanf",
+          "level": "warning",
+          "message": {
+            "text": "scanf() without field width limits can crash with huge input data."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "tools/cpdb-text-frontend.c"
+                },
+                "region": {
+                  "startLine": 479
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "invalidscanf",
+          "level": "warning",
+          "message": {
+            "text": "scanf() without field width limits can crash with huge input data."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "tools/cpdb-text-frontend.c"
+                },
+                "region": {
+                  "startLine": 491
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "invalidscanf",
+          "level": "warning",
+          "message": {
+            "text": "scanf() without field width limits can crash with huge input data."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "tools/cpdb-text-frontend.c"
+                },
+                "region": {
+                  "startLine": 504
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

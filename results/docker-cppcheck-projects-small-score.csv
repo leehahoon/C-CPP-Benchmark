@@ -1,0 +1,3 @@
+id,dataset,source_scope,ground_truth,alerts,target_file_alerts,file_hit,candidate_line_hit,has_line_candidates
+rv-c-566-447558595a36-0,reposvul,full_project_snapshot,positive,30,13,True,False,True
+rv-cpp-5659-d639e45c2cdc-0,reposvul,full_project_snapshot,positive,77,1,True,False,True

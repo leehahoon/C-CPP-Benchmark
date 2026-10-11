@@ -1,0 +1,21 @@
+{
+  "basis": "One or more SARIF alerts on an upstream labeled line, then manual comparison of the alert message with the labeled weakness and source code. Conservative exclusions below are not counted as detection of that weakness.",
+  "cppcheck": {
+    "raw_line_hits": 23,
+    "reviewed_weakness_matches": 18,
+    "excluded_cases": {
+      "castle-134-4": "pointerSize/memory-size warning is unrelated to the labeled format-string weakness",
+      "castle-416-2": "null-pointer warning does not identify the labeled use-after-free",
+      "castle-617-2": "invalid sqrt argument warning does not identify the assertion reached first",
+      "castle-822-1": "leak/uninitialized-variable warnings do not identify the labeled untrusted-pointer dereference",
+      "castle-843-3": "uninitialized-variable warning does not identify the labeled incompatible-type access"
+    }
+  },
+  "clang_static_analyzer": {
+    "raw_line_hits": 17,
+    "reviewed_weakness_matches": 16,
+    "excluded_cases": {
+      "castle-134-4": "memory-leak warning is unrelated to the labeled format-string weakness"
+    }
+  }
+}

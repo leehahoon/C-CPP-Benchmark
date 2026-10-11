@@ -1,0 +1,615 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Cppcheck",
+          "rules": [
+            {
+              "id": "memleakOnRealloc",
+              "name": "memleakOnRealloc"
+            },
+            {
+              "id": "missingReturn",
+              "name": "missingReturn"
+            },
+            {
+              "id": "invalidPrintfArgType_sint",
+              "name": "invalidPrintfArgType_sint"
+            },
+            {
+              "id": "uninitvar",
+              "name": "uninitvar"
+            },
+            {
+              "id": "invalidPrintfArgType_uint",
+              "name": "invalidPrintfArgType_uint"
+            },
+            {
+              "id": "overlappingWriteUnion",
+              "name": "overlappingWriteUnion"
+            },
+            {
+              "id": "toomanyconfigs",
+              "name": "toomanyconfigs"
+            }
+          ]
+        }
+      },
+      "results": [
+        {
+          "ruleId": "memleakOnRealloc",
+          "level": "error",
+          "message": {
+            "text": "Common realloc mistake: 'filearr' nulled but not freed upon failure"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/apprentice.c"
+                },
+                "region": {
+                  "startLine": 1173
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "missingReturn",
+          "level": "error",
+          "message": {
+            "text": "Found an exit path from function with non-void return type that has missing return statement"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/apprentice.c"
+                },
+                "region": {
+                  "startLine": 423
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "invalidPrintfArgType_sint",
+          "level": "warning",
+          "message": {
+            "text": "%d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/cdf.c"
+                },
+                "region": {
+                  "startLine": 436
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "invalidPrintfArgType_sint",
+          "level": "warning",
+          "message": {
+            "text": "%d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/cdf.c"
+                },
+                "region": {
+                  "startLine": 892
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "invalidPrintfArgType_sint",
+          "level": "warning",
+          "message": {
+            "text": "%d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/cdf.c"
+                },
+                "region": {
+                  "startLine": 1064
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "invalidPrintfArgType_sint",
+          "level": "warning",
+          "message": {
+            "text": "%d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/cdf.c"
+                },
+                "region": {
+                  "startLine": 1065
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "invalidPrintfArgType_sint",
+          "level": "warning",
+          "message": {
+            "text": "%d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/cdf.c"
+                },
+                "region": {
+                  "startLine": 1066
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "invalidPrintfArgType_sint",
+          "level": "warning",
+          "message": {
+            "text": "%d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/cdf.c"
+                },
+                "region": {
+                  "startLine": 1068
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "invalidPrintfArgType_sint",
+          "level": "warning",
+          "message": {
+            "text": "%d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/cdf.c"
+                },
+                "region": {
+                  "startLine": 1070
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "invalidPrintfArgType_sint",
+          "level": "warning",
+          "message": {
+            "text": "%d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/cdf.c"
+                },
+                "region": {
+                  "startLine": 1088
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "invalidPrintfArgType_sint",
+          "level": "warning",
+          "message": {
+            "text": "%d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/cdf.c"
+                },
+                "region": {
+                  "startLine": 1160
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "invalidPrintfArgType_sint",
+          "level": "warning",
+          "message": {
+            "text": "%d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/cdf.c"
+                },
+                "region": {
+                  "startLine": 1270
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "uninitvar",
+          "level": "error",
+          "message": {
+            "text": "Uninitialized variable: &check"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/compress.c"
+                },
+                "region": {
+                  "startLine": 190
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "invalidPrintfArgType_uint",
+          "level": "warning",
+          "message": {
+            "text": "%u in format string (no. 2) requires 'unsigned int' but the argument type is 'signed int'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/print.c"
+                },
+                "region": {
+                  "startLine": 67
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "invalidPrintfArgType_sint",
+          "level": "warning",
+          "message": {
+            "text": "%d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/print.c"
+                },
+                "region": {
+                  "startLine": 138
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "invalidPrintfArgType_sint",
+          "level": "warning",
+          "message": {
+            "text": "%lld in format string (no. 1) requires 'long long' but the argument type is 'unsigned long long'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/print.c"
+                },
+                "region": {
+                  "startLine": 143
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "invalidPrintfArgType_sint",
+          "level": "warning",
+          "message": {
+            "text": "%I64d in format string (no. 1) requires '__int64' but the argument type is 'unsigned long long'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/print.c"
+                },
+                "region": {
+                  "startLine": 143
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "invalidPrintfArgType_sint",
+          "level": "warning",
+          "message": {
+            "text": "%d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/softmagic.c"
+                },
+                "region": {
+                  "startLine": 1040
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "invalidPrintfArgType_uint",
+          "level": "warning",
+          "message": {
+            "text": "%u in format string (no. 1) requires 'unsigned int' but the argument type is 'signed int'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/softmagic.c"
+                },
+                "region": {
+                  "startLine": 1222
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "overlappingWriteUnion",
+          "level": "error",
+          "message": {
+            "text": "Overlapping read/write of union is undefined behavior"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/softmagic.c"
+                },
+                "region": {
+                  "startLine": 943
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "overlappingWriteUnion",
+          "level": "error",
+          "message": {
+            "text": "Overlapping read/write of union is undefined behavior"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/softmagic.c"
+                },
+                "region": {
+                  "startLine": 949
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "overlappingWriteUnion",
+          "level": "error",
+          "message": {
+            "text": "Overlapping read/write of union is undefined behavior"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/softmagic.c"
+                },
+                "region": {
+                  "startLine": 957
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "overlappingWriteUnion",
+          "level": "error",
+          "message": {
+            "text": "Overlapping read/write of union is undefined behavior"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/softmagic.c"
+                },
+                "region": {
+                  "startLine": 965
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "overlappingWriteUnion",
+          "level": "error",
+          "message": {
+            "text": "Overlapping read/write of union is undefined behavior"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/softmagic.c"
+                },
+                "region": {
+                  "startLine": 971
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "overlappingWriteUnion",
+          "level": "error",
+          "message": {
+            "text": "Overlapping read/write of union is undefined behavior"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/softmagic.c"
+                },
+                "region": {
+                  "startLine": 979
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "overlappingWriteUnion",
+          "level": "error",
+          "message": {
+            "text": "Overlapping read/write of union is undefined behavior"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/softmagic.c"
+                },
+                "region": {
+                  "startLine": 989
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "overlappingWriteUnion",
+          "level": "error",
+          "message": {
+            "text": "Overlapping read/write of union is undefined behavior"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/softmagic.c"
+                },
+                "region": {
+                  "startLine": 997
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "overlappingWriteUnion",
+          "level": "error",
+          "message": {
+            "text": "Overlapping read/write of union is undefined behavior"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/softmagic.c"
+                },
+                "region": {
+                  "startLine": 1002
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "overlappingWriteUnion",
+          "level": "error",
+          "message": {
+            "text": "Overlapping read/write of union is undefined behavior"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/softmagic.c"
+                },
+                "region": {
+                  "startLine": 1010
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "overlappingWriteUnion",
+          "level": "error",
+          "message": {
+            "text": "Overlapping read/write of union is undefined behavior"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/softmagic.c"
+                },
+                "region": {
+                  "startLine": 1017
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

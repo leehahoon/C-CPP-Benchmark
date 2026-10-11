@@ -1,0 +1,67 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Cppcheck",
+          "rules": [
+            {
+              "id": "resourceLeak",
+              "name": "resourceLeak"
+            },
+            {
+              "id": "memleakOnRealloc",
+              "name": "memleakOnRealloc"
+            },
+            {
+              "id": "toomanyconfigs",
+              "name": "toomanyconfigs"
+            }
+          ]
+        }
+      },
+      "results": [
+        {
+          "ruleId": "resourceLeak",
+          "level": "error",
+          "message": {
+            "text": "Resource leak: infile"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "test/bin/json_process.c"
+                },
+                "region": {
+                  "startLine": 173
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "memleakOnRealloc",
+          "level": "error",
+          "message": {
+            "text": "Common realloc mistake: 'buffer' nulled but not freed upon failure"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "test/bin/json_process.c"
+                },
+                "region": {
+                  "startLine": 279
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

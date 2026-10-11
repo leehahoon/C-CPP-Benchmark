@@ -1,0 +1,67 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Cppcheck",
+          "rules": [
+            {
+              "id": "uselessAssignmentPtrArg",
+              "name": "uselessAssignmentPtrArg"
+            },
+            {
+              "id": "allocaCalled",
+              "name": "allocaCalled"
+            },
+            {
+              "id": "toomanyconfigs",
+              "name": "toomanyconfigs"
+            }
+          ]
+        }
+      },
+      "results": [
+        {
+          "ruleId": "uselessAssignmentPtrArg",
+          "level": "warning",
+          "message": {
+            "text": "Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "compat/nedmalloc/nedmalloc.c"
+                },
+                "region": {
+                  "startLine": 621
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "allocaCalled",
+          "level": "warning",
+          "message": {
+            "text": "Obsolete function 'alloca' called. In C99 and later it is recommended to use a variable length array instead."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "compat/nedmalloc/nedmalloc.c"
+                },
+                "region": {
+                  "startLine": 941
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

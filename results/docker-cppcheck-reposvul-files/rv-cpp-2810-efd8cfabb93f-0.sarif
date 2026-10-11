@@ -1,0 +1,44 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Cppcheck",
+          "rules": [
+            {
+              "id": "selfAssignment",
+              "name": "selfAssignment"
+            },
+            {
+              "id": "toomanyconfigs",
+              "name": "toomanyconfigs"
+            }
+          ]
+        }
+      },
+      "results": [
+        {
+          "ruleId": "selfAssignment",
+          "level": "warning",
+          "message": {
+            "text": "Redundant assignment of 'imgdata.color.dng_levels.analogbalance[i]' to itself."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/libraw_cxx.cpp"
+                },
+                "region": {
+                  "startLine": 556
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

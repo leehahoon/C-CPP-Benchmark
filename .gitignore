@@ -1,0 +1,8 @@
+/sources/
+/data/raw/
+/workloads/
+/results/exiv2-build-ninja/
+/results/file-build/
+/.venv/
+__pycache__/
+*.pyc

@@ -1,0 +1,15 @@
+{
+  "total_seconds": 4.741,
+  "cases": [
+    {
+      "id": "rv-c-566-447558595a36-0",
+      "seconds": 1.907,
+      "completed": true
+    },
+    {
+      "id": "rv-cpp-5659-d639e45c2cdc-0",
+      "seconds": 2.834,
+      "completed": true
+    }
+  ]
+}

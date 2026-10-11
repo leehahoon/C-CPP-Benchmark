@@ -1,0 +1,70 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Cppcheck",
+          "rules": [
+            {
+              "id": "invalidFunctionArg",
+              "name": "invalidFunctionArg"
+            }
+          ]
+        }
+      },
+      "results": [
+        {
+          "ruleId": "invalidFunctionArg",
+          "level": "warning",
+          "message": {
+            "text": "Invalid sqrt() argument nr 1. The value is -2.7 but the valid values are '0.0:'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "CASTLE-617-2.c"
+                },
+                "region": {
+                  "startLine": 12
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "CASTLE-617-2.c"
+                },
+                "region": {
+                  "startLine": 9
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "CASTLE-617-2.c"
+                },
+                "region": {
+                  "startLine": 19
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "CASTLE-617-2.c"
+                },
+                "region": {
+                  "startLine": 16
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

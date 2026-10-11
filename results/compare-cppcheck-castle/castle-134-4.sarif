@@ -1,0 +1,82 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Cppcheck",
+          "rules": [
+            {
+              "id": "memleak",
+              "name": "memleak"
+            },
+            {
+              "id": "pointerSize",
+              "name": "pointerSize"
+            }
+          ]
+        }
+      },
+      "results": [
+        {
+          "ruleId": "memleak",
+          "level": "error",
+          "message": {
+            "text": "Memory leak: combined"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "CASTLE-134-4.c"
+                },
+                "region": {
+                  "startLine": 24
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "pointerSize",
+          "level": "warning",
+          "message": {
+            "text": "Size of pointer 'combined' used instead of size of its data."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "CASTLE-134-4.c"
+                },
+                "region": {
+                  "startLine": 20
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "pointerSize",
+          "level": "warning",
+          "message": {
+            "text": "Size of pointer 'combined' used instead of size of its data."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "CASTLE-134-4.c"
+                },
+                "region": {
+                  "startLine": 21
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

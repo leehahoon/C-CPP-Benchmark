@@ -1,0 +1,932 @@
+{
+  "$schema": "https://docs.oasis-open.org/sarif/sarif/v2.1.0/cos02/schemas/sarif-schema-2.1.0.json",
+  "runs": [
+    {
+      "artifacts": [
+        {
+          "length": 1484,
+          "location": {
+            "index": 0,
+            "uri": "file:///workspace/workloads/castle/source/CASTLE-770-7.c"
+          },
+          "mimeType": "text/plain",
+          "roles": [
+            "resultFile"
+          ]
+        }
+      ],
+      "columnKind": "unicodeCodePoints",
+      "results": [
+        {
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "importance": "essential",
+                      "location": {
+                        "message": {
+                          "text": "Memory is allocated"
+                        },
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "index": 0,
+                            "uri": "file:///workspace/workloads/castle/source/CASTLE-770-7.c"
+                          },
+                          "region": {
+                            "endColumn": 28,
+                            "endLine": 8,
+                            "startColumn": 19,
+                            "startLine": 8
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "importance": "important",
+                      "location": {
+                        "message": {
+                          "text": "Assuming 'input' is not equal to NULL"
+                        },
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "index": 0,
+                            "uri": "file:///workspace/workloads/castle/source/CASTLE-770-7.c"
+                          },
+                          "region": {
+                            "endColumn": 22,
+                            "endLine": 9,
+                            "startColumn": 9,
+                            "startLine": 9
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "importance": "unimportant",
+                      "location": {
+                        "message": {
+                          "text": "Taking false branch"
+                        },
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "index": 0,
+                            "uri": "file:///workspace/workloads/castle/source/CASTLE-770-7.c"
+                          },
+                          "region": {
+                            "endColumn": 5,
+                            "startColumn": 5,
+                            "startLine": 9
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "importance": "unimportant",
+                      "location": {
+                        "message": {
+                          "text": "Loop condition is true.  Entering loop body"
+                        },
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "index": 0,
+                            "uri": "file:///workspace/workloads/castle/source/CASTLE-770-7.c"
+                          },
+                          "region": {
+                            "endColumn": 5,
+                            "startColumn": 5,
+                            "startLine": 20
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "importance": "important",
+                      "location": {
+                        "message": {
+                          "text": "Assuming the condition is false"
+                        },
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "index": 0,
+                            "uri": "file:///workspace/workloads/castle/source/CASTLE-770-7.c"
+                          },
+                          "region": {
+                            "endColumn": 22,
+                            "endLine": 23,
+                            "startColumn": 13,
+                            "startLine": 23
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "importance": "unimportant",
+                      "location": {
+                        "message": {
+                          "text": "Left side of '||' is false"
+                        },
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "index": 0,
+                            "uri": "file:///workspace/workloads/castle/source/CASTLE-770-7.c"
+                          },
+                          "region": {
+                            "endColumn": 22,
+                            "endLine": 23,
+                            "startColumn": 13,
+                            "startLine": 23
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "importance": "important",
+                      "location": {
+                        "message": {
+                          "text": "Assuming the condition is false"
+                        },
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "index": 0,
+                            "uri": "file:///workspace/workloads/castle/source/CASTLE-770-7.c"
+                          },
+                          "region": {
+                            "endColumn": 41,
+                            "endLine": 23,
+                            "startColumn": 26,
+                            "startLine": 23
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "importance": "unimportant",
+                      "location": {
+                        "message": {
+                          "text": "Taking false branch"
+                        },
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "index": 0,
+                            "uri": "file:///workspace/workloads/castle/source/CASTLE-770-7.c"
+                          },
+                          "region": {
+                            "endColumn": 9,
+                            "startColumn": 9,
+                            "startLine": 23
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "importance": "unimportant",
+                      "location": {
+                        "message": {
+                          "text": "'i' is >= 'allocated_size'"
+                        },
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "index": 0,
+                            "uri": "file:///workspace/workloads/castle/source/CASTLE-770-7.c"
+                          },
+                          "region": {
+                            "endColumn": 17,
+                            "startColumn": 17,
+                            "startLine": 34
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "importance": "unimportant",
+                      "location": {
+                        "message": {
+                          "text": "Taking true branch"
+                        },
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "index": 0,
+                            "uri": "file:///workspace/workloads/castle/source/CASTLE-770-7.c"
+                          },
+                          "region": {
+                            "endColumn": 13,
+                            "startColumn": 13,
+                            "startLine": 34
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "importance": "unimportant",
+                      "location": {
+                        "message": {
+                          "text": "Taking false branch"
+                        },
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "index": 0,
+                            "uri": "file:///workspace/workloads/castle/source/CASTLE-770-7.c"
+                          },
+                          "region": {
+                            "endColumn": 17,
+                            "startColumn": 17,
+                            "startLine": 35
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "importance": "essential",
+                      "location": {
+                        "message": {
+                          "text": "Attempt to reallocate memory"
+                        },
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "index": 0,
+                            "uri": "file:///workspace/workloads/castle/source/CASTLE-770-7.c"
+                          },
+                          "region": {
+                            "endColumn": 65,
+                            "endLine": 40,
+                            "startColumn": 35,
+                            "startLine": 40
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "importance": "important",
+                      "location": {
+                        "message": {
+                          "text": "Assuming 'new_input' is equal to NULL"
+                        },
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "index": 0,
+                            "uri": "file:///workspace/workloads/castle/source/CASTLE-770-7.c"
+                          },
+                          "region": {
+                            "endColumn": 38,
+                            "endLine": 42,
+                            "startColumn": 21,
+                            "startLine": 42
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "importance": "essential",
+                      "location": {
+                        "message": {
+                          "text": "Reallocation failed"
+                        },
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "index": 0,
+                            "uri": "file:///workspace/workloads/castle/source/CASTLE-770-7.c"
+                          },
+                          "region": {
+                            "endColumn": 38,
+                            "endLine": 42,
+                            "startColumn": 21,
+                            "startLine": 42
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "importance": "unimportant",
+                      "location": {
+                        "message": {
+                          "text": "Taking true branch"
+                        },
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "index": 0,
+                            "uri": "file:///workspace/workloads/castle/source/CASTLE-770-7.c"
+                          },
+                          "region": {
+                            "endColumn": 17,
+                            "startColumn": 17,
+                            "startLine": 42
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "importance": "essential",
+                      "location": {
+                        "message": {
+                          "text": "Potential leak of memory pointed to by 'input'"
+                        },
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "index": 0,
+                            "uri": "file:///workspace/workloads/castle/source/CASTLE-770-7.c"
+                          },
+                          "region": {
+                            "endColumn": 21,
+                            "startColumn": 21,
+                            "startLine": 43
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": 0,
+                  "uri": "file:///workspace/workloads/castle/source/CASTLE-770-7.c"
+                },
+                "region": {
+                  "endColumn": 21,
+                  "startColumn": 21,
+                  "startLine": 43
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Potential leak of memory pointed to by 'input'"
+          },
+          "ruleId": "unix.Malloc",
+          "ruleIndex": 0
+        },
+        {
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "importance": "important",
+                      "location": {
+                        "message": {
+                          "text": "Assuming 'input' is not equal to NULL"
+                        },
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "index": 0,
+                            "uri": "file:///workspace/workloads/castle/source/CASTLE-770-7.c"
+                          },
+                          "region": {
+                            "endColumn": 22,
+                            "endLine": 9,
+                            "startColumn": 9,
+                            "startLine": 9
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "importance": "unimportant",
+                      "location": {
+                        "message": {
+                          "text": "Taking false branch"
+                        },
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "index": 0,
+                            "uri": "file:///workspace/workloads/castle/source/CASTLE-770-7.c"
+                          },
+                          "region": {
+                            "endColumn": 5,
+                            "startColumn": 5,
+                            "startLine": 9
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "importance": "unimportant",
+                      "location": {
+                        "message": {
+                          "text": "Loop condition is true.  Entering loop body"
+                        },
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "index": 0,
+                            "uri": "file:///workspace/workloads/castle/source/CASTLE-770-7.c"
+                          },
+                          "region": {
+                            "endColumn": 5,
+                            "startColumn": 5,
+                            "startLine": 20
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "importance": "important",
+                      "location": {
+                        "message": {
+                          "text": "Assuming the condition is false"
+                        },
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "index": 0,
+                            "uri": "file:///workspace/workloads/castle/source/CASTLE-770-7.c"
+                          },
+                          "region": {
+                            "endColumn": 22,
+                            "endLine": 23,
+                            "startColumn": 13,
+                            "startLine": 23
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "importance": "unimportant",
+                      "location": {
+                        "message": {
+                          "text": "Left side of '||' is false"
+                        },
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "index": 0,
+                            "uri": "file:///workspace/workloads/castle/source/CASTLE-770-7.c"
+                          },
+                          "region": {
+                            "endColumn": 22,
+                            "endLine": 23,
+                            "startColumn": 13,
+                            "startLine": 23
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "importance": "important",
+                      "location": {
+                        "message": {
+                          "text": "Assuming the condition is false"
+                        },
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "index": 0,
+                            "uri": "file:///workspace/workloads/castle/source/CASTLE-770-7.c"
+                          },
+                          "region": {
+                            "endColumn": 41,
+                            "endLine": 23,
+                            "startColumn": 26,
+                            "startLine": 23
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "importance": "unimportant",
+                      "location": {
+                        "message": {
+                          "text": "Taking false branch"
+                        },
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "index": 0,
+                            "uri": "file:///workspace/workloads/castle/source/CASTLE-770-7.c"
+                          },
+                          "region": {
+                            "endColumn": 9,
+                            "startColumn": 9,
+                            "startLine": 23
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "importance": "unimportant",
+                      "location": {
+                        "message": {
+                          "text": "'i' is >= 'allocated_size'"
+                        },
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "index": 0,
+                            "uri": "file:///workspace/workloads/castle/source/CASTLE-770-7.c"
+                          },
+                          "region": {
+                            "endColumn": 17,
+                            "startColumn": 17,
+                            "startLine": 34
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "importance": "unimportant",
+                      "location": {
+                        "message": {
+                          "text": "Taking true branch"
+                        },
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "index": 0,
+                            "uri": "file:///workspace/workloads/castle/source/CASTLE-770-7.c"
+                          },
+                          "region": {
+                            "endColumn": 13,
+                            "startColumn": 13,
+                            "startLine": 34
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "importance": "unimportant",
+                      "location": {
+                        "message": {
+                          "text": "Taking false branch"
+                        },
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "index": 0,
+                            "uri": "file:///workspace/workloads/castle/source/CASTLE-770-7.c"
+                          },
+                          "region": {
+                            "endColumn": 17,
+                            "startColumn": 17,
+                            "startLine": 35
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "importance": "essential",
+                      "location": {
+                        "message": {
+                          "text": "Memory is allocated"
+                        },
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "index": 0,
+                            "uri": "file:///workspace/workloads/castle/source/CASTLE-770-7.c"
+                          },
+                          "region": {
+                            "endColumn": 65,
+                            "endLine": 40,
+                            "startColumn": 35,
+                            "startLine": 40
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "importance": "important",
+                      "location": {
+                        "message": {
+                          "text": "Assuming 'new_input' is not equal to NULL"
+                        },
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "index": 0,
+                            "uri": "file:///workspace/workloads/castle/source/CASTLE-770-7.c"
+                          },
+                          "region": {
+                            "endColumn": 38,
+                            "endLine": 42,
+                            "startColumn": 21,
+                            "startLine": 42
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "importance": "unimportant",
+                      "location": {
+                        "message": {
+                          "text": "Taking false branch"
+                        },
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "index": 0,
+                            "uri": "file:///workspace/workloads/castle/source/CASTLE-770-7.c"
+                          },
+                          "region": {
+                            "endColumn": 17,
+                            "startColumn": 17,
+                            "startLine": 42
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "importance": "unimportant",
+                      "location": {
+                        "message": {
+                          "text": "Loop condition is true.  Entering loop body"
+                        },
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "index": 0,
+                            "uri": "file:///workspace/workloads/castle/source/CASTLE-770-7.c"
+                          },
+                          "region": {
+                            "endColumn": 5,
+                            "startColumn": 5,
+                            "startLine": 20
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "importance": "important",
+                      "location": {
+                        "message": {
+                          "text": "Assuming the condition is false"
+                        },
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "index": 0,
+                            "uri": "file:///workspace/workloads/castle/source/CASTLE-770-7.c"
+                          },
+                          "region": {
+                            "endColumn": 22,
+                            "endLine": 23,
+                            "startColumn": 13,
+                            "startLine": 23
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "importance": "unimportant",
+                      "location": {
+                        "message": {
+                          "text": "Left side of '||' is false"
+                        },
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "index": 0,
+                            "uri": "file:///workspace/workloads/castle/source/CASTLE-770-7.c"
+                          },
+                          "region": {
+                            "endColumn": 22,
+                            "endLine": 23,
+                            "startColumn": 13,
+                            "startLine": 23
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "importance": "important",
+                      "location": {
+                        "message": {
+                          "text": "Assuming the condition is false"
+                        },
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "index": 0,
+                            "uri": "file:///workspace/workloads/castle/source/CASTLE-770-7.c"
+                          },
+                          "region": {
+                            "endColumn": 41,
+                            "endLine": 23,
+                            "startColumn": 26,
+                            "startLine": 23
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "importance": "unimportant",
+                      "location": {
+                        "message": {
+                          "text": "Taking false branch"
+                        },
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "index": 0,
+                            "uri": "file:///workspace/workloads/castle/source/CASTLE-770-7.c"
+                          },
+                          "region": {
+                            "endColumn": 9,
+                            "startColumn": 9,
+                            "startLine": 23
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "importance": "unimportant",
+                      "location": {
+                        "message": {
+                          "text": "'i' is >= 'allocated_size'"
+                        },
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "index": 0,
+                            "uri": "file:///workspace/workloads/castle/source/CASTLE-770-7.c"
+                          },
+                          "region": {
+                            "endColumn": 17,
+                            "startColumn": 17,
+                            "startLine": 34
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "importance": "unimportant",
+                      "location": {
+                        "message": {
+                          "text": "Taking true branch"
+                        },
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "index": 0,
+                            "uri": "file:///workspace/workloads/castle/source/CASTLE-770-7.c"
+                          },
+                          "region": {
+                            "endColumn": 13,
+                            "startColumn": 13,
+                            "startLine": 34
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "importance": "unimportant",
+                      "location": {
+                        "message": {
+                          "text": "Taking false branch"
+                        },
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "index": 0,
+                            "uri": "file:///workspace/workloads/castle/source/CASTLE-770-7.c"
+                          },
+                          "region": {
+                            "endColumn": 17,
+                            "startColumn": 17,
+                            "startLine": 35
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "importance": "essential",
+                      "location": {
+                        "message": {
+                          "text": "Attempt to reallocate memory"
+                        },
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "index": 0,
+                            "uri": "file:///workspace/workloads/castle/source/CASTLE-770-7.c"
+                          },
+                          "region": {
+                            "endColumn": 65,
+                            "endLine": 40,
+                            "startColumn": 35,
+                            "startLine": 40
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "importance": "important",
+                      "location": {
+                        "message": {
+                          "text": "Assuming 'new_input' is equal to NULL"
+                        },
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "index": 0,
+                            "uri": "file:///workspace/workloads/castle/source/CASTLE-770-7.c"
+                          },
+                          "region": {
+                            "endColumn": 38,
+                            "endLine": 42,
+                            "startColumn": 21,
+                            "startLine": 42
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "importance": "essential",
+                      "location": {
+                        "message": {
+                          "text": "Reallocation failed"
+                        },
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "index": 0,
+                            "uri": "file:///workspace/workloads/castle/source/CASTLE-770-7.c"
+                          },
+                          "region": {
+                            "endColumn": 38,
+                            "endLine": 42,
+                            "startColumn": 21,
+                            "startLine": 42
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "importance": "unimportant",
+                      "location": {
+                        "message": {
+                          "text": "Taking true branch"
+                        },
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "index": 0,
+                            "uri": "file:///workspace/workloads/castle/source/CASTLE-770-7.c"
+                          },
+                          "region": {
+                            "endColumn": 17,
+                            "startColumn": 17,
+                            "startLine": 42
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "importance": "essential",
+                      "location": {
+                        "message": {
+                          "text": "Potential leak of memory pointed to by 'input'"
+                        },
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "index": 0,
+                            "uri": "file:///workspace/workloads/castle/source/CASTLE-770-7.c"
+                          },
+                          "region": {
+                            "endColumn": 21,
+                            "startColumn": 21,
+                            "startLine": 43
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": 0,
+                  "uri": "file:///workspace/workloads/castle/source/CASTLE-770-7.c"
+                },
+                "region": {
+                  "endColumn": 21,
+                  "startColumn": 21,
+                  "startLine": 43
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Potential leak of memory pointed to by 'input'"
+          },
+          "ruleId": "unix.Malloc",
+          "ruleIndex": 0
+        }
+      ],
+      "tool": {
+        "driver": {
+          "fullName": "clang static analyzer",
+          "informationUri": "https://clang.llvm.org/docs/UsersManual.html",
+          "language": "en-US",
+          "name": "clang",
+          "rules": [
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "warning",
+                "rank": -1
+              },
+              "fullDescription": {
+                "text": "Check for memory leaks, double free, and use-after-free problems. Traces memory managed by malloc()/free()."
+              },
+              "helpUri": "https://clang.llvm.org/docs/analyzer/checkers.html#unix-malloc",
+              "id": "unix.Malloc",
+              "name": "unix.Malloc"
+            }
+          ],
+          "version": "Ubuntu clang version 18.1.3 (1ubuntu1)"
+        }
+      }
+    }
+  ],
+  "version": "2.1.0"
+}

@@ -1,0 +1,28 @@
+{
+  "manifest_cases": 2,
+  "scored_cases": 2,
+  "excluded_rules": [
+    "unknownMacro",
+    "syntaxError",
+    "internalAstError",
+    "preprocessorErrorDirective"
+  ],
+  "missing_cases": 0,
+  "missing_ids": [],
+  "castle_positive_scored": 0,
+  "castle_exact_line_hits": 0,
+  "castle_file_hits": 0,
+  "castle_negative_scored": 0,
+  "castle_negative_cases_with_alerts": 0,
+  "non_castle_cases_scored": 2,
+  "non_castle_target_file_hits": 2,
+  "non_castle_line_candidate_cases_scored": 2,
+  "non_castle_patch_candidate_line_hits": 0,
+  "full_project_cases_scored": 2,
+  "full_project_target_file_hits": 2,
+  "embedded_file_cases_scored": 0,
+  "embedded_file_target_file_hits": 0,
+  "embedded_file_line_candidate_cases_scored": 0,
+  "target_file_smoke_cases_scored": 0,
+  "target_file_smoke_hits": 0
+}

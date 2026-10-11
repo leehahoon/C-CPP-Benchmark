@@ -1,0 +1,67 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Cppcheck",
+          "rules": [
+            {
+              "id": "duplicateExpression",
+              "name": "duplicateExpression"
+            },
+            {
+              "id": "legacyUninitvar",
+              "name": "legacyUninitvar"
+            },
+            {
+              "id": "toomanyconfigs",
+              "name": "toomanyconfigs"
+            }
+          ]
+        }
+      },
+      "results": [
+        {
+          "ruleId": "duplicateExpression",
+          "level": "warning",
+          "message": {
+            "text": "Same expression '!strcmp(szExt,\"m4a\")' found multiple times in chain of '||' operators."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "modules/ffmpeg_in/ffmpeg_demux.c"
+                },
+                "region": {
+                  "startLine": 264
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "legacyUninitvar",
+          "level": "error",
+          "message": {
+            "text": "Uninitialized variable: szExt"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "modules/ffmpeg_in/ffmpeg_demux.c"
+                },
+                "region": {
+                  "startLine": 292
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

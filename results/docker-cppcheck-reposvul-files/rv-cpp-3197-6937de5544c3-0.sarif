@@ -1,0 +1,82 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Cppcheck",
+          "rules": [
+            {
+              "id": "invalidPrintfArgType_uint",
+              "name": "invalidPrintfArgType_uint"
+            },
+            {
+              "id": "memleakOnRealloc",
+              "name": "memleakOnRealloc"
+            }
+          ]
+        }
+      },
+      "results": [
+        {
+          "ruleId": "invalidPrintfArgType_uint",
+          "level": "warning",
+          "message": {
+            "text": "%u in format string (no. 1) requires 'unsigned int' but the argument type is 'signed int'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "hphp/runtime/server/upload.cpp"
+                },
+                "region": {
+                  "startLine": 860
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "memleakOnRealloc",
+          "level": "error",
+          "message": {
+            "text": "Common realloc mistake: 'out' nulled but not freed upon failure"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "hphp/runtime/server/upload.cpp"
+                },
+                "region": {
+                  "startLine": 691
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "memleakOnRealloc",
+          "level": "error",
+          "message": {
+            "text": "Common realloc mistake: 'lbuf' nulled but not freed upon failure"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "hphp/runtime/server/upload.cpp"
+                },
+                "region": {
+                  "startLine": 1046
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

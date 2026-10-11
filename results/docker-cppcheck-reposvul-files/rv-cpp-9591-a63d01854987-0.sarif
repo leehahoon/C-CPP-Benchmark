@@ -1,0 +1,40 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Cppcheck",
+          "rules": [
+            {
+              "id": "incorrectLogicOperator",
+              "name": "incorrectLogicOperator"
+            }
+          ]
+        }
+      },
+      "results": [
+        {
+          "ruleId": "incorrectLogicOperator",
+          "level": "warning",
+          "message": {
+            "text": "Logical disjunction always evaluates to true: vec[1] > 15 || vec[1] < 32."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/drachtio.cpp"
+                },
+                "region": {
+                  "startLine": 850
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

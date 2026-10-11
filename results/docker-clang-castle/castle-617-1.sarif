@@ -1,0 +1,204 @@
+{
+  "$schema": "https://docs.oasis-open.org/sarif/sarif/v2.1.0/cos02/schemas/sarif-schema-2.1.0.json",
+  "runs": [
+    {
+      "artifacts": [
+        {
+          "length": 660,
+          "location": {
+            "index": 0,
+            "uri": "file:///workspace/workloads/castle/source/CASTLE-617-1.c"
+          },
+          "mimeType": "text/plain",
+          "roles": [
+            "resultFile"
+          ]
+        }
+      ],
+      "columnKind": "unicodeCodePoints",
+      "results": [
+        {
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "importance": "essential",
+                      "location": {
+                        "message": {
+                          "text": "Value stored to 'x' is never read"
+                        },
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "index": 0,
+                            "uri": "file:///workspace/workloads/castle/source/CASTLE-617-1.c"
+                          },
+                          "region": {
+                            "endColumn": 5,
+                            "startColumn": 5,
+                            "startLine": 11
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": 0,
+                  "uri": "file:///workspace/workloads/castle/source/CASTLE-617-1.c"
+                },
+                "region": {
+                  "endColumn": 5,
+                  "startColumn": 5,
+                  "startLine": 11
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Value stored to 'x' is never read"
+          },
+          "ruleId": "deadcode.DeadStores",
+          "ruleIndex": 0
+        },
+        {
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "importance": "essential",
+                      "location": {
+                        "message": {
+                          "text": "Value stored to 'y' is never read"
+                        },
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "index": 0,
+                            "uri": "file:///workspace/workloads/castle/source/CASTLE-617-1.c"
+                          },
+                          "region": {
+                            "endColumn": 5,
+                            "startColumn": 5,
+                            "startLine": 12
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": 0,
+                  "uri": "file:///workspace/workloads/castle/source/CASTLE-617-1.c"
+                },
+                "region": {
+                  "endColumn": 5,
+                  "startColumn": 5,
+                  "startLine": 12
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Value stored to 'y' is never read"
+          },
+          "ruleId": "deadcode.DeadStores",
+          "ruleIndex": 0
+        },
+        {
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "importance": "essential",
+                      "location": {
+                        "message": {
+                          "text": "Value stored to 'z' is never read"
+                        },
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "index": 0,
+                            "uri": "file:///workspace/workloads/castle/source/CASTLE-617-1.c"
+                          },
+                          "region": {
+                            "endColumn": 5,
+                            "startColumn": 5,
+                            "startLine": 13
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": 0,
+                  "uri": "file:///workspace/workloads/castle/source/CASTLE-617-1.c"
+                },
+                "region": {
+                  "endColumn": 5,
+                  "startColumn": 5,
+                  "startLine": 13
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Value stored to 'z' is never read"
+          },
+          "ruleId": "deadcode.DeadStores",
+          "ruleIndex": 0
+        }
+      ],
+      "tool": {
+        "driver": {
+          "fullName": "clang static analyzer",
+          "informationUri": "https://clang.llvm.org/docs/UsersManual.html",
+          "language": "en-US",
+          "name": "clang",
+          "rules": [
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "warning",
+                "rank": -1
+              },
+              "fullDescription": {
+                "text": "Check for values stored to variables that are never read afterwards"
+              },
+              "helpUri": "https://clang.llvm.org/docs/analyzer/checkers.html#deadcode-deadstores",
+              "id": "deadcode.DeadStores",
+              "name": "deadcode.DeadStores"
+            }
+          ],
+          "version": "Ubuntu clang version 18.1.3 (1ubuntu1)"
+        }
+      }
+    }
+  ],
+  "version": "2.1.0"
+}

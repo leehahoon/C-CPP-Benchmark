@@ -1,0 +1,17 @@
+id,dataset,source_scope,ground_truth,alerts,target_file_alerts,file_hit,candidate_line_hit,has_line_candidates
+rv-c-233-95a69adab9ac-0,reposvul,embedded_vulnerable_file,positive,2,2,True,False,True
+rv-c-324-8909c9ad8ff0-0,reposvul,embedded_vulnerable_file,positive,0,0,False,False,False
+rv-c-3126-360e95d45ac4-1,reposvul,embedded_vulnerable_file,positive,0,0,False,False,True
+rv-c-3128-360e95d45ac4-1,reposvul,embedded_vulnerable_file,positive,0,0,False,False,True
+rv-c-3129-360e95d45ac4-1,reposvul,embedded_vulnerable_file,positive,0,0,False,False,True
+rv-c-3130-360e95d45ac4-1,reposvul,embedded_vulnerable_file,positive,0,0,False,False,True
+rv-c-3131-360e95d45ac4-1,reposvul,embedded_vulnerable_file,positive,0,0,False,False,True
+rv-c-3132-360e95d45ac4-1,reposvul,embedded_vulnerable_file,positive,0,0,False,False,True
+rv-c-3133-360e95d45ac4-1,reposvul,embedded_vulnerable_file,positive,0,0,False,False,True
+rv-c-3136-360e95d45ac4-1,reposvul,embedded_vulnerable_file,positive,0,0,False,False,True
+rv-c-3137-360e95d45ac4-1,reposvul,embedded_vulnerable_file,positive,0,0,False,False,True
+rv-c-3138-360e95d45ac4-1,reposvul,embedded_vulnerable_file,positive,0,0,False,False,True
+rv-c-3799-0c4120fffa3d-1,reposvul,embedded_vulnerable_file,positive,0,0,False,False,False
+rv-c-4184-54d501092d88-0,reposvul,embedded_vulnerable_file,positive,2,2,True,False,False
+rv-c-5534-cb71f53e8cea-0,reposvul,embedded_vulnerable_file,positive,0,0,False,False,True
+rv-cpp-3993-148115fcc40f-0,reposvul,embedded_vulnerable_file,positive,0,0,False,False,True

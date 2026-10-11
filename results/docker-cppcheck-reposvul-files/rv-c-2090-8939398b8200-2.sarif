@@ -1,0 +1,177 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Cppcheck",
+          "rules": [
+            {
+              "id": "ignoredReturnValue",
+              "name": "ignoredReturnValue"
+            },
+            {
+              "id": "invalidPrintfArgType_uint",
+              "name": "invalidPrintfArgType_uint"
+            }
+          ]
+        }
+      },
+      "results": [
+        {
+          "ruleId": "ignoredReturnValue",
+          "level": "warning",
+          "message": {
+            "text": "Return value of function log() is not used."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/hooks/abrt-hook-ccpp.c"
+                },
+                "region": {
+                  "startLine": 719
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "invalidPrintfArgType_uint",
+          "level": "warning",
+          "message": {
+            "text": "%lu in format string (no. 1) requires 'unsigned long' but the argument type is 'signed long'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/hooks/abrt-hook-ccpp.c"
+                },
+                "region": {
+                  "startLine": 173
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "invalidPrintfArgType_uint",
+          "level": "warning",
+          "message": {
+            "text": "%lu in format string (no. 1) requires 'unsigned long' but the argument type is 'signed long'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/hooks/abrt-hook-ccpp.c"
+                },
+                "region": {
+                  "startLine": 199
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "invalidPrintfArgType_uint",
+          "level": "warning",
+          "message": {
+            "text": "%lu in format string (no. 1) requires 'unsigned long' but the argument type is 'signed long'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/hooks/abrt-hook-ccpp.c"
+                },
+                "region": {
+                  "startLine": 211
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "invalidPrintfArgType_uint",
+          "level": "warning",
+          "message": {
+            "text": "%lu in format string (no. 1) requires 'unsigned long' but the argument type is 'signed long'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/hooks/abrt-hook-ccpp.c"
+                },
+                "region": {
+                  "startLine": 218
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "invalidPrintfArgType_uint",
+          "level": "warning",
+          "message": {
+            "text": "%lu in format string (no. 1) requires 'unsigned long' but the argument type is 'signed long'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/hooks/abrt-hook-ccpp.c"
+                },
+                "region": {
+                  "startLine": 666
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "invalidPrintfArgType_uint",
+          "level": "warning",
+          "message": {
+            "text": "%lu in format string (no. 3) requires 'unsigned long' but the argument type is 'signed long'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/hooks/abrt-hook-ccpp.c"
+                },
+                "region": {
+                  "startLine": 769
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "invalidPrintfArgType_uint",
+          "level": "warning",
+          "message": {
+            "text": "%lu in format string (no. 1) requires 'unsigned long' but the argument type is 'signed long'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/hooks/abrt-hook-ccpp.c"
+                },
+                "region": {
+                  "startLine": 791
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

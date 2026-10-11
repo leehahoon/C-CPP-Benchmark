@@ -1,0 +1,288 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Cppcheck",
+          "rules": [
+            {
+              "id": "doubleFree",
+              "name": "doubleFree"
+            },
+            {
+              "id": "memleakOnRealloc",
+              "name": "memleakOnRealloc"
+            },
+            {
+              "id": "nullPointer",
+              "name": "nullPointer"
+            },
+            {
+              "id": "nullPointerArithmeticRedundantCheck",
+              "name": "nullPointerArithmeticRedundantCheck"
+            },
+            {
+              "id": "toomanyconfigs",
+              "name": "toomanyconfigs"
+            }
+          ]
+        }
+      },
+      "results": [
+        {
+          "ruleId": "doubleFree",
+          "level": "error",
+          "message": {
+            "text": "Memory pointed to by 'buf' is freed twice."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "fontforge/sfd.c"
+                },
+                "region": {
+                  "startLine": 2215
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "fontforge/sfd.c"
+                },
+                "region": {
+                  "startLine": 2214
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "memleakOnRealloc",
+          "level": "error",
+          "message": {
+            "text": "Common realloc mistake: 'sofar' nulled but not freed upon failure"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "fontforge/sfd.c"
+                },
+                "region": {
+                  "startLine": 7052
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "memleakOnRealloc",
+          "level": "error",
+          "message": {
+            "text": "Common realloc mistake: 'langs' nulled but not freed upon failure"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "fontforge/sfd.c"
+                },
+                "region": {
+                  "startLine": 7391
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "memleakOnRealloc",
+          "level": "error",
+          "message": {
+            "text": "Common realloc mistake: 'ret' nulled but not freed upon failure"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "fontforge/sfd.c"
+                },
+                "region": {
+                  "startLine": 7529
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "memleakOnRealloc",
+          "level": "error",
+          "message": {
+            "text": "Common realloc mistake: 'ret' nulled but not freed upon failure"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "fontforge/sfd.c"
+                },
+                "region": {
+                  "startLine": 7536
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "memleakOnRealloc",
+          "level": "error",
+          "message": {
+            "text": "Common realloc mistake: 'sf' nulled but not freed upon failure"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "fontforge/sfd.c"
+                },
+                "region": {
+                  "startLine": 8483
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "nullPointer",
+          "level": "warning",
+          "message": {
+            "text": "Possible null pointer dereference: pt"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "fontforge/sfd.c"
+                },
+                "region": {
+                  "startLine": 3845
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "fontforge/sfd.c"
+                },
+                "region": {
+                  "startLine": 3832
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "fontforge/sfd.c"
+                },
+                "region": {
+                  "startLine": 3827
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "fontforge/sfd.c"
+                },
+                "region": {
+                  "startLine": 3827
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "nullPointer",
+          "level": "warning",
+          "message": {
+            "text": "Possible null pointer dereference: pt"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "fontforge/sfd.c"
+                },
+                "region": {
+                  "startLine": 3968
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "fontforge/sfd.c"
+                },
+                "region": {
+                  "startLine": 3955
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "fontforge/sfd.c"
+                },
+                "region": {
+                  "startLine": 3944
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "fontforge/sfd.c"
+                },
+                "region": {
+                  "startLine": 3944
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "nullPointerArithmeticRedundantCheck",
+          "level": "warning",
+          "message": {
+            "text": "Either the condition 'pt' is redundant or there is pointer arithmetic with NULL pointer."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "fontforge/sfd.c"
+                },
+                "region": {
+                  "startLine": 478
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "fontforge/sfd.c"
+                },
+                "region": {
+                  "startLine": 482
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Cppcheck",
+          "rules": [
+            {
+              "id": "nullPointerArithmeticRedundantCheck",
+              "name": "nullPointerArithmeticRedundantCheck"
+            },
+            {
+              "id": "toomanyconfigs",
+              "name": "toomanyconfigs"
+            }
+          ]
+        }
+      },
+      "results": [
+        {
+          "ruleId": "nullPointerArithmeticRedundantCheck",
+          "level": "warning",
+          "message": {
+            "text": "Either the condition 'rawExifData' is redundant or there is pointer arithmetic with NULL pointer."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/webpimage.cpp"
+                },
+                "region": {
+                  "startLine": 672
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/webpimage.cpp"
+                },
+                "region": {
+                  "startLine": 694
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

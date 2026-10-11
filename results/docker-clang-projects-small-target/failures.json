@@ -1,0 +1,12 @@
+[
+  {
+    "id": "rv-c-566-447558595a36-0",
+    "returncode": 1,
+    "stderr": ":2: error: unknown type name 'uint8_t'\n  161 |         uint8_t flag;\n      |         ^\nworkloads/reposvul_projects/rv-c-566-file/source/src/file.h:171:2: error: unknown type name 'uint8_t'\n  171 |         uint8_t factor;\n      |         ^\nworkloads/reposvul_projects/rv-c-566-file/source/src/file.h:174:2: error: unknown type name 'uint8_t'\n  174 |         uint8_t reln;           /* relation (0=eq, '>'=gt, etc) */\n      |         ^\nworkloads/reposvul_projects/rv-c-566-file/source/src/file.h:175:2: error: unknown type name 'uint8_t'\n  175 |         uint8_t vallen;         /* length of string value, if any */\n      |         ^\nworkloads/reposvul_projects/rv-c-566-file/source/src/file.h:176:2: error: unknown type name 'uint8_t'\n  176 |         uint8_t type;           /* comparison type (FILE_*) */\n      |         ^\nworkloads/reposvul_projects/rv-c-566-file/source/src/file.h:177:2: error: unknown type name 'uint8_t'\n  177 |         uint8_t in_type;        /* type of indirection */\n      |         ^\nworkloads/reposvul_projects/rv-c-566-file/source/src/file.h:246:2: error: unknown type name 'uint8_t'\n  246 |         uint8_t in_op;          /* operator for indirection */\n      |         ^\nworkloads/reposvul_projects/rv-c-566-file/source/src/file.h:247:2: error: unknown type name 'uint8_t'\n  247 |         uint8_t mask_op;        /* operator for mask */\n      |         ^\nworkloads/reposvul_projects/rv-c-566-file/source/src/file.h:249:2: error: unknown type name 'uint8_t'\n  249 |         uint8_t cond;           /* conditional type */\n      |         ^\nworkloads/reposvul_projects/rv-c-566-file/source/src/file.h:253:2: error: unknown type name 'uint8_t'\n  253 |         uint8_t factor_op;\n      |         ^\nworkloads/reposvul_projects/rv-c-566-file/source/src/file.h:284:2: error: unknown type name 'uint32_t'\n  284 |         uint32_t offset;        /* offset to magic number */\n      |         ^\nfatal error: too many errors emitted, stopping now [-ferror-limit=]\n20 errors generated.\n"
+  },
+  {
+    "id": "rv-cpp-5659-d639e45c2cdc-0",
+    "returncode": 1,
+    "stderr": "workloads/reposvul_projects/rv-cpp-5659-exiv2/source/src/webpimage.cpp:27:10: fatal error: 'config.h' file not found\n   27 | #include \"config.h\"\n      |          ^~~~~~~~~~\n1 error generated.\n"
+  }
+]

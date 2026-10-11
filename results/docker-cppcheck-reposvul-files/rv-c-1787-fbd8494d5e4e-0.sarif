@@ -1,0 +1,54 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Cppcheck",
+          "rules": [
+            {
+              "id": "shiftTooManyBits",
+              "name": "shiftTooManyBits"
+            },
+            {
+              "id": "toomanyconfigs",
+              "name": "toomanyconfigs"
+            }
+          ]
+        }
+      },
+      "results": [
+        {
+          "ruleId": "shiftTooManyBits",
+          "level": "warning",
+          "message": {
+            "text": "Shifting 32-bit value by 65536 bits is undefined behaviour. See condition at line 232."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/bplist.c"
+                },
+                "region": {
+                  "startLine": 223
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/bplist.c"
+                },
+                "region": {
+                  "startLine": 223
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

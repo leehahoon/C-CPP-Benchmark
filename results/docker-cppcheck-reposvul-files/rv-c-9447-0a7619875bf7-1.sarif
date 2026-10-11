@@ -1,0 +1,60 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Cppcheck",
+          "rules": [
+            {
+              "id": "arrayIndexOutOfBoundsCond",
+              "name": "arrayIndexOutOfBoundsCond"
+            }
+          ]
+        }
+      },
+      "results": [
+        {
+          "ruleId": "arrayIndexOutOfBoundsCond",
+          "level": "warning",
+          "message": {
+            "text": "Either the condition 'p<sizeof(tokenNames)' is redundant or the array 'tokenNames[298]' is accessed at index 299, which is out of bounds."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/jslex.c"
+                },
+                "region": {
+                  "startLine": 812
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/jslex.c"
+                },
+                "region": {
+                  "startLine": 808
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/jslex.c"
+                },
+                "region": {
+                  "startLine": 807
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

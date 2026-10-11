@@ -1,0 +1,54 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Cppcheck",
+          "rules": [
+            {
+              "id": "oppositeInnerCondition",
+              "name": "oppositeInnerCondition"
+            },
+            {
+              "id": "toomanyconfigs",
+              "name": "toomanyconfigs"
+            }
+          ]
+        }
+      },
+      "results": [
+        {
+          "ruleId": "oppositeInnerCondition",
+          "level": "warning",
+          "message": {
+            "text": "Opposite inner 'if' condition leads to a dead code block."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "print-isoclns.c"
+                },
+                "region": {
+                  "startLine": 899
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "print-isoclns.c"
+                },
+                "region": {
+                  "startLine": 895
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+[
+  {
+    "id": "sec-linux-CVE-2022-0185",
+    "error": "Command '['cppcheck', '--xml', '--xml-version=2', '--enable=warning', '--suppress=missingIncludeSystem', '--quiet', '--max-configs=1', 'workloads/sec/sec-linux-CVE-2022-0185/source']' timed out after 1200 seconds"
+  }
+]

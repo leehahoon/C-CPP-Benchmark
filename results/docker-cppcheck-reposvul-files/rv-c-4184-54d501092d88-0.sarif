@@ -1,0 +1,103 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Cppcheck",
+          "rules": [
+            {
+              "id": "objectIndex",
+              "name": "objectIndex"
+            },
+            {
+              "id": "toomanyconfigs",
+              "name": "toomanyconfigs"
+            }
+          ]
+        }
+      },
+      "results": [
+        {
+          "ruleId": "objectIndex",
+          "level": "error",
+          "message": {
+            "text": "The address of local variable 'a' is accessed at non-zero index."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ext/misc/zipfile.c"
+                },
+                "region": {
+                  "startLine": 1355
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ext/misc/zipfile.c"
+                },
+                "region": {
+                  "startLine": 2063
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ext/misc/zipfile.c"
+                },
+                "region": {
+                  "startLine": 2063
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "objectIndex",
+          "level": "error",
+          "message": {
+            "text": "The address of local variable 'a' is accessed at non-zero index."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ext/misc/zipfile.c"
+                },
+                "region": {
+                  "startLine": 1749
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ext/misc/zipfile.c"
+                },
+                "region": {
+                  "startLine": 2075
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ext/misc/zipfile.c"
+                },
+                "region": {
+                  "startLine": 2075
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

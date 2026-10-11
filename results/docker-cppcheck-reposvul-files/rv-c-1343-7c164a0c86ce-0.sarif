@@ -1,0 +1,347 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Cppcheck",
+          "rules": [
+            {
+              "id": "nullPointerRedundantCheck",
+              "name": "nullPointerRedundantCheck"
+            },
+            {
+              "id": "selfAssignment",
+              "name": "selfAssignment"
+            },
+            {
+              "id": "uninitvar",
+              "name": "uninitvar"
+            },
+            {
+              "id": "toomanyconfigs",
+              "name": "toomanyconfigs"
+            }
+          ]
+        }
+      },
+      "results": [
+        {
+          "ruleId": "nullPointerRedundantCheck",
+          "level": "warning",
+          "message": {
+            "text": "Either the condition 'imp_sth' is redundant or there is possible null pointer dereference: imp_sth."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "dbdimp.c"
+                },
+                "region": {
+                  "startLine": 4244
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "dbdimp.c"
+                },
+                "region": {
+                  "startLine": 4246
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "selfAssignment",
+          "level": "warning",
+          "message": {
+            "text": "Redundant assignment of 'dbh' to itself."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "dbdimp.c"
+                },
+                "region": {
+                  "startLine": 2544
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "selfAssignment",
+          "level": "warning",
+          "message": {
+            "text": "Redundant assignment of 'attribs' to itself."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "dbdimp.c"
+                },
+                "region": {
+                  "startLine": 3268
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "selfAssignment",
+          "level": "warning",
+          "message": {
+            "text": "Redundant assignment of 'bind_comment_placeholders' to itself."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "dbdimp.c"
+                },
+                "region": {
+                  "startLine": 3286
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "selfAssignment",
+          "level": "warning",
+          "message": {
+            "text": "Redundant assignment of 'sth' to itself."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "dbdimp.c"
+                },
+                "region": {
+                  "startLine": 4748
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "selfAssignment",
+          "level": "warning",
+          "message": {
+            "text": "Redundant assignment of 'imp_sth' to itself."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "dbdimp.c"
+                },
+                "region": {
+                  "startLine": 4749
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "selfAssignment",
+          "level": "warning",
+          "message": {
+            "text": "Redundant assignment of 'field' to itself."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "dbdimp.c"
+                },
+                "region": {
+                  "startLine": 4750
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "selfAssignment",
+          "level": "warning",
+          "message": {
+            "text": "Redundant assignment of 'offset' to itself."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "dbdimp.c"
+                },
+                "region": {
+                  "startLine": 4751
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "selfAssignment",
+          "level": "warning",
+          "message": {
+            "text": "Redundant assignment of 'len' to itself."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "dbdimp.c"
+                },
+                "region": {
+                  "startLine": 4752
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "selfAssignment",
+          "level": "warning",
+          "message": {
+            "text": "Redundant assignment of 'destrv' to itself."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "dbdimp.c"
+                },
+                "region": {
+                  "startLine": 4753
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "selfAssignment",
+          "level": "warning",
+          "message": {
+            "text": "Redundant assignment of 'destoffset' to itself."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "dbdimp.c"
+                },
+                "region": {
+                  "startLine": 4754
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "selfAssignment",
+          "level": "warning",
+          "message": {
+            "text": "Redundant assignment of 'attribs' to itself."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "dbdimp.c"
+                },
+                "region": {
+                  "startLine": 4805
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "selfAssignment",
+          "level": "warning",
+          "message": {
+            "text": "Redundant assignment of 'maxlen' to itself."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "dbdimp.c"
+                },
+                "region": {
+                  "startLine": 4806
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "selfAssignment",
+          "level": "warning",
+          "message": {
+            "text": "Redundant assignment of 'dbh' to itself."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "dbdimp.c"
+                },
+                "region": {
+                  "startLine": 5103
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "selfAssignment",
+          "level": "warning",
+          "message": {
+            "text": "Redundant assignment of 'imp_dbh' to itself."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "dbdimp.c"
+                },
+                "region": {
+                  "startLine": 5104
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "uninitvar",
+          "level": "error",
+          "message": {
+            "text": "Uninitialized variable: slen"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "dbdimp.c"
+                },
+                "region": {
+                  "startLine": 4793
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Cppcheck",
+          "rules": [
+            {
+              "id": "nullPointerRedundantCheck",
+              "name": "nullPointerRedundantCheck"
+            },
+            {
+              "id": "uninitvar",
+              "name": "uninitvar"
+            }
+          ]
+        }
+      },
+      "results": [
+        {
+          "ruleId": "nullPointerRedundantCheck",
+          "level": "warning",
+          "message": {
+            "text": "Either the condition 'doi_def==NULL' is redundant or there is possible null pointer dereference: doi_def."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "net/ipv4/cipso_ipv4.c"
+                },
+                "region": {
+                  "startLine": 476
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "net/ipv4/cipso_ipv4.c"
+                },
+                "region": {
+                  "startLine": 479
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "nullPointerRedundantCheck",
+          "level": "warning",
+          "message": {
+            "text": "Either the condition 'doi_def==NULL' is redundant or there is possible null pointer dereference: doi_def."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "net/ipv4/cipso_ipv4.c"
+                },
+                "region": {
+                  "startLine": 477
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "net/ipv4/cipso_ipv4.c"
+                },
+                "region": {
+                  "startLine": 479
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "uninitvar",
+          "level": "warning",
+          "message": {
+            "text": "Uninitialized variables: entry.hash, entry.key, entry.key_len, entry.lsm_data, entry.activity"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "net/ipv4/cipso_ipv4.c"
+                },
+                "region": {
+                  "startLine": 288
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "uninitvar",
+          "level": "error",
+          "message": {
+            "text": "Uninitialized variable: entry->hash"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "net/ipv4/cipso_ipv4.c"
+                },
+                "region": {
+                  "startLine": 333
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

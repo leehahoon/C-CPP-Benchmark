@@ -1,0 +1,96 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Cppcheck",
+          "rules": [
+            {
+              "id": "invalidScanfArgType_int",
+              "name": "invalidScanfArgType_int"
+            },
+            {
+              "id": "memleak",
+              "name": "memleak"
+            },
+            {
+              "id": "uninitvar",
+              "name": "uninitvar"
+            }
+          ]
+        }
+      },
+      "results": [
+        {
+          "ruleId": "invalidScanfArgType_int",
+          "level": "warning",
+          "message": {
+            "text": "%d in format string (no. 1) requires 'int *' but the argument type is 'signed int'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "CASTLE-822-1.c"
+                },
+                "region": {
+                  "startLine": 13
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "memleak",
+          "level": "error",
+          "message": {
+            "text": "Memory leak: ptr"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "CASTLE-822-1.c"
+                },
+                "region": {
+                  "startLine": 20
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "uninitvar",
+          "level": "error",
+          "message": {
+            "text": "Uninitialized variable: input"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "CASTLE-822-1.c"
+                },
+                "region": {
+                  "startLine": 20
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "CASTLE-822-1.c"
+                },
+                "region": {
+                  "startLine": 16
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

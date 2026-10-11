@@ -1,0 +1,177 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Cppcheck",
+          "rules": [
+            {
+              "id": "invalidscanf",
+              "name": "invalidscanf"
+            },
+            {
+              "id": "memleak",
+              "name": "memleak"
+            }
+          ]
+        }
+      },
+      "results": [
+        {
+          "ruleId": "invalidscanf",
+          "level": "warning",
+          "message": {
+            "text": "fscanf() without field width limits can crash with huge input data."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "validator/my_validator.cpp"
+                },
+                "region": {
+                  "startLine": 58
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "memleak",
+          "level": "error",
+          "message": {
+            "text": "Memory leak: dp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "validator/my_validator.cpp"
+                },
+                "region": {
+                  "startLine": 39
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "memleak",
+          "level": "error",
+          "message": {
+            "text": "Memory leak: dp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "validator/my_validator.cpp"
+                },
+                "region": {
+                  "startLine": 52
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "memleak",
+          "level": "error",
+          "message": {
+            "text": "Memory leak: dp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "validator/my_validator.cpp"
+                },
+                "region": {
+                  "startLine": 65
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "memleak",
+          "level": "error",
+          "message": {
+            "text": "Memory leak: dp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "validator/my_validator.cpp"
+                },
+                "region": {
+                  "startLine": 72
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "memleak",
+          "level": "error",
+          "message": {
+            "text": "Memory leak: dp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "validator/my_validator.cpp"
+                },
+                "region": {
+                  "startLine": 79
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "memleak",
+          "level": "error",
+          "message": {
+            "text": "Memory leak: dp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "validator/my_validator.cpp"
+                },
+                "region": {
+                  "startLine": 86
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "memleak",
+          "level": "error",
+          "message": {
+            "text": "Memory leak: dp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "validator/my_validator.cpp"
+                },
+                "region": {
+                  "startLine": 94
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

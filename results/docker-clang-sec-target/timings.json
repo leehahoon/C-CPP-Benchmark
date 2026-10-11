@@ -1,0 +1,15 @@
+{
+  "total_seconds": 1.484,
+  "cases": [
+    {
+      "id": "sec-linux-CVE-2022-0185",
+      "seconds": 0.204,
+      "completed": false
+    },
+    {
+      "id": "sec-v8-472139305",
+      "seconds": 1.28,
+      "completed": false
+    }
+  ]
+}

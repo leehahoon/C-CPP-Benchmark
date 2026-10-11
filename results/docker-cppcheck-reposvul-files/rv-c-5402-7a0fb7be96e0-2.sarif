@@ -1,0 +1,473 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Cppcheck",
+          "rules": [
+            {
+              "id": "nullPointerRedundantCheck",
+              "name": "nullPointerRedundantCheck"
+            },
+            {
+              "id": "uninitvar",
+              "name": "uninitvar"
+            },
+            {
+              "id": "toomanyconfigs",
+              "name": "toomanyconfigs"
+            }
+          ]
+        }
+      },
+      "results": [
+        {
+          "ruleId": "nullPointerRedundantCheck",
+          "level": "warning",
+          "message": {
+            "text": "Either the condition '!hash' is redundant or there is possible null pointer dereference: hash."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "bfd/elf32-arm.c"
+                },
+                "region": {
+                  "startLine": 6093
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "bfd/elf32-arm.c"
+                },
+                "region": {
+                  "startLine": 6055
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "nullPointerRedundantCheck",
+          "level": "warning",
+          "message": {
+            "text": "Either the condition '!hash' is redundant or there is possible null pointer dereference: hash."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "bfd/elf32-arm.c"
+                },
+                "region": {
+                  "startLine": 6094
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "bfd/elf32-arm.c"
+                },
+                "region": {
+                  "startLine": 6055
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "nullPointerRedundantCheck",
+          "level": "warning",
+          "message": {
+            "text": "Either the condition 'stub_entry==NULL' is redundant or there is possible null pointer dereference: stub_entry."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "bfd/elf32-arm.c"
+                },
+                "region": {
+                  "startLine": 6334
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "bfd/elf32-arm.c"
+                },
+                "region": {
+                  "startLine": 6326
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "nullPointerRedundantCheck",
+          "level": "warning",
+          "message": {
+            "text": "Either the condition 'stub_entry==NULL' is redundant or there is possible null pointer dereference: stub_entry."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "bfd/elf32-arm.c"
+                },
+                "region": {
+                  "startLine": 6335
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "bfd/elf32-arm.c"
+                },
+                "region": {
+                  "startLine": 6326
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "nullPointerRedundantCheck",
+          "level": "warning",
+          "message": {
+            "text": "Either the condition 'hash!=NULL' is redundant or there is possible null pointer dereference: hash."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "bfd/elf32-arm.c"
+                },
+                "region": {
+                  "startLine": 6714
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "bfd/elf32-arm.c"
+                },
+                "region": {
+                  "startLine": 6734
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "nullPointerRedundantCheck",
+          "level": "warning",
+          "message": {
+            "text": "Either the condition 'hash!=NULL' is redundant or there is possible null pointer dereference: hash."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "bfd/elf32-arm.c"
+                },
+                "region": {
+                  "startLine": 6719
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "bfd/elf32-arm.c"
+                },
+                "region": {
+                  "startLine": 6734
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "nullPointerRedundantCheck",
+          "level": "warning",
+          "message": {
+            "text": "Either the condition 'hash!=NULL' is redundant or there is possible null pointer dereference: hash."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "bfd/elf32-arm.c"
+                },
+                "region": {
+                  "startLine": 6722
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "bfd/elf32-arm.c"
+                },
+                "region": {
+                  "startLine": 6734
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "nullPointerRedundantCheck",
+          "level": "warning",
+          "message": {
+            "text": "Either the condition 'hash!=NULL' is redundant or there is possible null pointer dereference: hash."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "bfd/elf32-arm.c"
+                },
+                "region": {
+                  "startLine": 6723
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "bfd/elf32-arm.c"
+                },
+                "region": {
+                  "startLine": 6734
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "nullPointerRedundantCheck",
+          "level": "warning",
+          "message": {
+            "text": "Either the condition 'hash!=NULL' is redundant or there is possible null pointer dereference: hash."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "bfd/elf32-arm.c"
+                },
+                "region": {
+                  "startLine": 6749
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "bfd/elf32-arm.c"
+                },
+                "region": {
+                  "startLine": 6761
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "nullPointerRedundantCheck",
+          "level": "warning",
+          "message": {
+            "text": "Either the condition 'hash!=NULL' is redundant or there is possible null pointer dereference: hash."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "bfd/elf32-arm.c"
+                },
+                "region": {
+                  "startLine": 6779
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "bfd/elf32-arm.c"
+                },
+                "region": {
+                  "startLine": 6734
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "nullPointerRedundantCheck",
+          "level": "warning",
+          "message": {
+            "text": "Either the condition 'hash!=NULL' is redundant or there is possible null pointer dereference: hash."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "bfd/elf32-arm.c"
+                },
+                "region": {
+                  "startLine": 6781
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "bfd/elf32-arm.c"
+                },
+                "region": {
+                  "startLine": 6734
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "nullPointerRedundantCheck",
+          "level": "warning",
+          "message": {
+            "text": "Either the condition 'hash!=NULL' is redundant or there is possible null pointer dereference: hash."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "bfd/elf32-arm.c"
+                },
+                "region": {
+                  "startLine": 6782
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "bfd/elf32-arm.c"
+                },
+                "region": {
+                  "startLine": 6734
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "nullPointerRedundantCheck",
+          "level": "warning",
+          "message": {
+            "text": "Either the condition 'globals==NULL' is redundant or there is possible null pointer dereference: globals."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "bfd/elf32-arm.c"
+                },
+                "region": {
+                  "startLine": 8415
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "bfd/elf32-arm.c"
+                },
+                "region": {
+                  "startLine": 8417
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "nullPointerRedundantCheck",
+          "level": "warning",
+          "message": {
+            "text": "Either the condition 'globals!=NULL' is redundant or there is possible null pointer dereference: globals."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "bfd/elf32-arm.c"
+                },
+                "region": {
+                  "startLine": 17797
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "bfd/elf32-arm.c"
+                },
+                "region": {
+                  "startLine": 17794
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "uninitvar",
+          "level": "error",
+          "message": {
+            "text": "Uninitialized variables: &key.destination, &key.hash, &key.sym_name, &key.r_type, &key.branch_type, &key.non_a8_stub"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "bfd/elf32-arm.c"
+                },
+                "region": {
+                  "startLine": 5641
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "uninitvar",
+          "level": "error",
+          "message": {
+            "text": "Uninitialized variable: &rel"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "bfd/elf32-arm.c"
+                },
+                "region": {
+                  "startLine": 17722
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

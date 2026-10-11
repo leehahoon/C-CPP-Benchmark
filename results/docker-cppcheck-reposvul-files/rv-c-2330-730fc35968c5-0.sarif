@@ -1,0 +1,86 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Cppcheck",
+          "rules": [
+            {
+              "id": "invalidPrintfArgType_uint",
+              "name": "invalidPrintfArgType_uint"
+            },
+            {
+              "id": "uninitdata",
+              "name": "uninitdata"
+            },
+            {
+              "id": "toomanyconfigs",
+              "name": "toomanyconfigs"
+            }
+          ]
+        }
+      },
+      "results": [
+        {
+          "ruleId": "invalidPrintfArgType_uint",
+          "level": "warning",
+          "message": {
+            "text": "%u in format string (no. 1) requires 'unsigned int' but the argument type is 'signed int'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "addrtoname.c"
+                },
+                "region": {
+                  "startLine": 1289
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "invalidPrintfArgType_uint",
+          "level": "warning",
+          "message": {
+            "text": "%u in format string (no. 2) requires 'unsigned int' but the argument type is 'signed int'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "addrtoname.c"
+                },
+                "region": {
+                  "startLine": 1289
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "uninitdata",
+          "level": "error",
+          "message": {
+            "text": "Memory is allocated but not initialized: cp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "addrtoname.c"
+                },
+                "region": {
+                  "startLine": 600
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

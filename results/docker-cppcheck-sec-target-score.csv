@@ -1,0 +1,3 @@
+id,dataset,source_scope,ground_truth,alerts,target_file_alerts,file_hit,candidate_line_hit,has_line_candidates
+sec-linux-CVE-2022-0185,sec-bench-pro,target_file_smoke,positive,1,1,True,False,True
+sec-v8-472139305,sec-bench-pro,target_file_smoke,positive,0,0,False,False,False

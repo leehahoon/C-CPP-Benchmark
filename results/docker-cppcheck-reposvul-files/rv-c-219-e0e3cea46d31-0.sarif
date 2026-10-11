@@ -1,0 +1,185 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Cppcheck",
+          "rules": [
+            {
+              "id": "nullPointerRedundantCheck",
+              "name": "nullPointerRedundantCheck"
+            },
+            {
+              "id": "ctunullpointer",
+              "name": "ctunullpointer"
+            },
+            {
+              "id": "toomanyconfigs",
+              "name": "toomanyconfigs"
+            }
+          ]
+        }
+      },
+      "results": [
+        {
+          "ruleId": "nullPointerRedundantCheck",
+          "level": "warning",
+          "message": {
+            "text": "Either the condition 'scm' is redundant or there is possible null pointer dereference: scm."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "include/net/scm.h"
+                },
+                "region": {
+                  "startLine": 57
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "include/net/scm.h"
+                },
+                "region": {
+                  "startLine": 67
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "include/net/scm.h"
+                },
+                "region": {
+                  "startLine": 68
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "nullPointerRedundantCheck",
+          "level": "warning",
+          "message": {
+            "text": "Either the condition 'scm' is redundant or there is possible null pointer dereference: scm."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "include/net/scm.h"
+                },
+                "region": {
+                  "startLine": 58
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "include/net/scm.h"
+                },
+                "region": {
+                  "startLine": 67
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "include/net/scm.h"
+                },
+                "region": {
+                  "startLine": 68
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "nullPointerRedundantCheck",
+          "level": "warning",
+          "message": {
+            "text": "Either the condition 'scm' is redundant or there is possible null pointer dereference: scm."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "include/net/scm.h"
+                },
+                "region": {
+                  "startLine": 60
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "include/net/scm.h"
+                },
+                "region": {
+                  "startLine": 67
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "include/net/scm.h"
+                },
+                "region": {
+                  "startLine": 68
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "ctunullpointer",
+          "level": "warning",
+          "message": {
+            "text": "Null pointer dereference: scm"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "include/net/scm.h"
+                },
+                "region": {
+                  "startLine": 57
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "include/net/scm.h"
+                },
+                "region": {
+                  "startLine": 67
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "include/net/scm.h"
+                },
+                "region": {
+                  "startLine": 68
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

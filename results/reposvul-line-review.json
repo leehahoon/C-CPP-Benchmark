@@ -1,0 +1,27 @@
+{
+  "basis": "Among 18 actionable Cppcheck alerts overlapping patch-derived candidate lines, compare the alert message and source operation with the record's CWE. This is a conservative weakness-class review, not proof of detecting the exact CVE root cause.",
+  "raw_candidate_line_hits": 18,
+  "reviewed_weakness_class_matches": 11,
+  "accepted_cases": [
+    "rv-c-2693-ee301cb2029d-1",
+    "rv-c-2693-ee301cb2029d-2",
+    "rv-c-2693-ee301cb2029d-3",
+    "rv-c-2693-ee301cb2029d-4",
+    "rv-c-4714-33441d90a506-0",
+    "rv-c-7166-8cd68c54e064-1",
+    "rv-c-9439-bed844f109b6-0",
+    "rv-c-10986-d6196703d89c-3",
+    "rv-c-11721-f181bd1f1475-0",
+    "rv-c-11721-f181bd1f1475-1",
+    "rv-cpp-10270-ee2eef34a836-0"
+  ],
+  "excluded_cases": {
+    "rv-c-277-b66c59840175-0": "autoVariables lifetime warning does not establish the labeled CWE-200 information exposure",
+    "rv-c-277-b66c59840175-1": "autoVariables lifetime warning does not establish the labeled CWE-200 information exposure",
+    "rv-c-2793-cc3824767bde-0": "printf signedness warning does not identify the labeled memory-bounds weakness",
+    "rv-c-3781-341f12cd5b97-3": "possible null-pointer warning does not identify the labeled out-of-bounds read",
+    "rv-c-3782-341f12cd5b97-3": "possible null-pointer warning does not identify the labeled out-of-bounds read",
+    "rv-c-3783-341f12cd5b97-3": "possible null-pointer warning does not identify the labeled out-of-bounds write",
+    "rv-cpp-1969-58c893e834ff-0": "CWE-399 is too broad to establish that the reported out-of-bounds access is the labeled weakness"
+  }
+}

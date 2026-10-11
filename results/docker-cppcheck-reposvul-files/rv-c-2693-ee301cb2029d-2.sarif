@@ -1,0 +1,82 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Cppcheck",
+          "rules": [
+            {
+              "id": "invalidscanf",
+              "name": "invalidscanf"
+            },
+            {
+              "id": "toomanyconfigs",
+              "name": "toomanyconfigs"
+            }
+          ]
+        }
+      },
+      "results": [
+        {
+          "ruleId": "invalidscanf",
+          "level": "warning",
+          "message": {
+            "text": "fscanf() without field width limits can crash with huge input data."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/gplot.c"
+                },
+                "region": {
+                  "startLine": 847
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "invalidscanf",
+          "level": "warning",
+          "message": {
+            "text": "fscanf() without field width limits can crash with huge input data."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/gplot.c"
+                },
+                "region": {
+                  "startLine": 875
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "invalidscanf",
+          "level": "warning",
+          "message": {
+            "text": "fscanf() without field width limits can crash with huge input data."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/gplot.c"
+                },
+                "region": {
+                  "startLine": 889
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

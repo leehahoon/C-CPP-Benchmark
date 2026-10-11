@@ -1,0 +1,50 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Cppcheck",
+          "rules": [
+            {
+              "id": "nullPointerRedundantCheck",
+              "name": "nullPointerRedundantCheck"
+            }
+          ]
+        }
+      },
+      "results": [
+        {
+          "ruleId": "nullPointerRedundantCheck",
+          "level": "warning",
+          "message": {
+            "text": "Either the condition '!msg' is redundant or there is possible null pointer dereference: msg."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "sql/wsrep_sst.cc"
+                },
+                "region": {
+                  "startLine": 633
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "sql/wsrep_sst.cc"
+                },
+                "region": {
+                  "startLine": 634
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
